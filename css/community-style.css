@@ -96,41 +96,33 @@ header {
 
 /* COMMUNITY */
 
-main {
-  padding: 5rem;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-p {
-  font-size: 20px;
-}
 /* mission */
 .mission h2 {
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
   grid-column: 1 / span 3;
   justify-self: center;
+  padding: 0 5rem 0 2rem;
 }
+
 .mission img {
-  width: 70%;
-  margin: auto;
+  width: 60%;
   display: block;
+  border: black solid 2px;
 }
+
 .mission {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 0px;
   margin: 5% auto 15% auto;
 }
+
 .mission p {
-  grid-row: 4 / span 2;
+  grid-row: 3 / span 2;
   grid-column: 1 / span 2;
   z-index: 2;
-  text-align: right;
-  padding: 5rem;
+  text-align: left;
+  padding: 2rem;
   margin: -10% -15% auto auto;
   width: 80%;
 }
@@ -151,17 +143,17 @@ p {
 
 /* vision */
 .vision img {
-  width: 90%;
-  margin: auto;
+  width: 70%;
+  margin: 0 0 0 10rem;
   display: block;
+  border: black solid 2px;
 }
 .vision {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 0px;
   padding: 2rem;
-  margin: 15% auto 10% auto;
+  margin: -5% auto 10% auto;
 }
 .vision h2 {
   grid-row: 1 / span 1;
@@ -171,19 +163,20 @@ p {
 }
 
 .vision p {
-  grid-row: 2 / span 1;
+  grid-row: 2 / span 3;
   grid-column: 4 / span 2;
   width: 80%;
-  margin: auto;
-  align-self: center;
+  margin: 4rem;
   text-justify: center;
 }
+
 .vision li:nth-child(3) {
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
 }
+
 .vision li:nth-child(4) {
-  grid-row: 2 / span 2;
+  grid-row: 1 / span 2;
   grid-column: 2 / span 2;
   margin-left: -10%;
   z-index: 2;
@@ -197,24 +190,25 @@ p {
   margin: 3%;
 }
 .values img {
-  width: 70%;
-  margin: auto;
+  width: 60%;
+  margin: 2rem auto;
   display: block;
   align-self: center;
+  border: black solid 2px;
 }
 .values {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
-  margin: 0px auto 150px auto;
+  margin: 0px auto 150px 150px;
 }
 .values-container p h3 {
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 1;
   grid-column: 1 / span 1;
   margin: auto;
   text-justify: right;
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .values-container h3 {
@@ -233,7 +227,17 @@ p {
 /* more info */
 
 .more-info h2 {
-  margin: 15% auto 5% auto;
+  margin: 0 auto 5% auto;
+}
+
+.more-info p {
+  text-align: center;
+  margin: -3rem 12rem 5rem;
+}
+
+.git {
+  text-align: center;
+  margin: 4rem 12rem 5rem;
 }
 
 /* events slider */
@@ -246,12 +250,13 @@ p {
   overflow-x: scroll;
 }
 .events-slider {
-  margin: 15% auto 5% auto;
+  margin: 10% auto 5% auto;
 }
 
 .slide img {
   width: 960px;
   height: 365px;
+  margin-right: 10px;
 }
 #carousel .slide {
   display: inline-block;
@@ -261,6 +266,7 @@ p {
 form {
   font-family: Arial;
   margin-top: 15%;
+  margin-bottom: 10%;
 }
 
 .container-2 {
@@ -294,7 +300,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-  background-color: #9a89fe;
+  background-color: black;
   color: rgb(255, 255, 255);
   border: none;
   width: 100%;
